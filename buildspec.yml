@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - apt-get update -y
-      - apt-get install -y docker-ce
+      - apt-get install -y docker
   pre_build:
     commands:
       - $(aws ecr get-login)
