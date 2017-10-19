@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - apt-get update -y
-      - apt-get install -y docker && systemctl start docker
+      - apt install docker.io -y
   pre_build:
     commands:
       - $(aws ecr get-login)
